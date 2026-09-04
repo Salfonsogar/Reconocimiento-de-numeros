@@ -9,7 +9,7 @@ T = salidas;
 net = newff([min(P')' max(P')'], [30, 25, 20, 10], ...
     {'tansig', 'logsig', 'satlin','purelin'}, 'traingdm');
 net.trainParam.epochs = 10000;
-net.trainParam.goal   = 0.5e-3;
+net.trainParam.goal   = 0.5e-6;
 net.trainParam.lr     = 0.1;
 net.trainParam.mc     = 0.4;
 
